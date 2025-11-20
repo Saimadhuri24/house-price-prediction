@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="card">
+    <h2>Enter Details to Predict</h2>
+    
+    <form action="/predict" method="POST">
+        <select name="location" required>
+            {% for loc in locations %}
+            <option value="{{loc}}">{{loc}}</option>
+            {% endfor %}
+        </select>
+
+        <input type="number" name="sqft" placeholder="Total Area (sqft)" required>
+        <input type="number" name="bhk" placeholder="BHK" required>
+        <input type="number" name="bath" placeholder="Bathrooms" required>
+        
+        <button type="submit">Predict Price</button>
+    </form>
+
+    <a href="/logout"><button class="logout-btn">Logout</button></a>
+</div>
+
+</body>
+</html>
