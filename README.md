@@ -33,22 +33,22 @@ It predicts house prices in **Bengaluru** based on features like **location, tot
 
 house-price-prediction/
 │
-├── app.py                         # Flask backend
-├── train_model.py                 # Model training script
-├── bengaluru_house_prices.csv     # Dataset
+├── app.py # Flask backend
+├── train_model.py # Model training script
+├── bengaluru_house_prices.csv # Dataset
 │
 ├── model/
-│   └── best_model.pkl             # Saved ML model
+│ └── best_model.pkl # Saved ML model
 │
 ├── static/
-│   └── style.css                  # CSS styling
+│ └── style.css # CSS styling
 │
 ├── templates/
-│   ├── home.html
-│   ├── login.html
-│   ├── signup.html
-│   ├── index.html
-│   └── result.html
+│ ├── home.html
+│ ├── login.html
+│ ├── signup.html
+│ ├── index.html
+│ └── result.html
 │
 └── README.md
 
